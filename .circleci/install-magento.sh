@@ -1,5 +1,12 @@
 #/bin/bash
+
+# Increase kernel config required by Elasticsearch container
+sudo sysctl -w vm.max_map_count=262144
+
+docker login -u $DOCKER_USER -p $DOCKER_PASS docker-adobe-cif-release.dr-uw2.adobeitc.com
+
 docker-compose up -d
+docker ps
 
 # Wait for Magento to be installed
 while [[ "$(curl -s -o /dev/null -w ''%{http_code}'' http://localhost:8080/graphql)" != "200" ]];
