@@ -49,10 +49,6 @@ jobs:
           name: Update permissions
           command: sudo chown -R circleci /usr/local/lib/node_modules
       - run:
-          name: Start Magento and install sample content
-          working_directory: .circleci
-          command: bash install-magento.sh
-      - run:
           name: Build
           command: |
             java -version
@@ -62,6 +58,15 @@ jobs:
           paths:
             - ~/.m2
           key: maven-repo-v1-{{ checksum "pom.xml" }}
+
+  start-magento:
+    machine: true
+    steps:
+      - checkout
+      - run:
+          name: Start Magento and install sample content
+          working_directory: .circleci
+          command: bash install-magento.sh
 
   deploy-sample:
     executor: cif_executor
@@ -89,12 +94,14 @@ workflows:
           filters:
             tags:
               only: /.*/
-
       - build-classic:
           filters:
             tags:
               only: /.*/
-
+      - start-magento:
+          filters:
+            tags:
+              only: /.*/
       - deploy-sample:
           requires:
             - build
