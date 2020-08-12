@@ -2,7 +2,7 @@
 docker-compose up -d
 
 # Wait for Magento to be installed
-while [[ "$(curl -s -o /dev/null -w ''%{http_code}'' http://localhost/graphql)" != "200" ]];
+while [[ "$(curl -s -o /dev/null -w ''%{http_code}'' http://localhost:8080/graphql)" != "200" ]];
 do echo "Waiting for Magento installation to complete ..." && sleep 15;
 done
 

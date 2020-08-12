@@ -21,8 +21,8 @@ services:
       - ELASTICSEARCH_PORT_NUMBER=9200
       - PHP_MEMORY_LIMIT=2048M
     ports:
-      - '80:80'
-      - '443:443'
+      - '8080:80'
+      - '4430:443'
     volumes:
       - 'magento_data:/bitnami'
     depends_on:
