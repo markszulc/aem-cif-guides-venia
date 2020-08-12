@@ -50,7 +50,7 @@ jobs:
           command: sudo chown -R circleci /usr/local/lib/node_modules
       - run:
           name: Start Magento and install sample content
-          command: bash install-magento.sh
+          command: bash .circleci/install-magento.sh
       - run:
           name: Build
           command: |
