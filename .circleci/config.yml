@@ -61,6 +61,7 @@ jobs:
 
   start-magento:
     machine: true
+    resource_class: large
     steps:
       - checkout
       - run:
