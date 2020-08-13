@@ -60,10 +60,10 @@ jobs:
           key: maven-repo-v1-{{ checksum "pom.xml" }}
 
   start-magento:
-    machine: true
-    resource_class: large
+    executor: cif_executor
     steps:
       - checkout
+      - setup_remote_docker
       - run:
           name: Start Magento and install sample content
           working_directory: .circleci
