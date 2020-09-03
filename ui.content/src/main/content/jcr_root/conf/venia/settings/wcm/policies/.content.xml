@@ -207,10 +207,13 @@
             <container jcr:primaryType="nt:unstructured">
                 <policy_1574694950110
                     jcr:description="Allows the template components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
+                    jcr:lastModified="{Date}2020-08-23T19:45:14.296+10:00"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Root"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:Venia - Content,/apps/venia/components/form/container,group:Venia - Structure]">
+                    components="[group:Venia - Content,/apps/venia/components/form/container,group:Venia - Structure]"
+                    layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -234,13 +237,27 @@
                                 resourceType="venia/components/contentfragment"/>
                         </assetToComponentMapping>
                     </cq:authoring>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0 jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-container--fixedwidth"
+                                    cq:styleId="1598175779225"
+                                    cq:styleLabel="Fixed Width"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
                 </policy_1574694950110>
                 <policy_1574695586800
                     jcr:description="Allows the page components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
+                    jcr:lastModified="{Date}2020-08-24T11:29:57.745+10:00"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Content"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:Venia - Content,group:Venia - Commerce,/apps/venia/components/form/container]">
+                    components="[group:Venia - Commerce,group:Venia - Content,/apps/venia/components/form/container]"
+                    layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -263,12 +280,23 @@
                                 droptarget="contentfragment"
                                 resourceType="venia/components/contentfragment"/>
                             <mapping_1575030271082
-                                jcr:primaryType="nt:unstructured" 
-                                assetGroup="product" 
-                                droptarget="product-data-reference" 
-                                resourceType="venia/components/commerce/productteaser" />
+                                jcr:primaryType="nt:unstructured"
+                                assetGroup="product"
+                                droptarget="product-data-reference"
+                                resourceType="venia/components/commerce/productteaser"/>
                         </assetToComponentMapping>
                     </cq:authoring>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0 jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-container--fixedwidth"
+                                    cq:styleId="1598175947881"
+                                    cq:styleLabel="Fixed Width"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
                 </policy_1574695586800>
                 <policy_649128221558427
                     cq:styleDefaultElement="main"
@@ -305,10 +333,11 @@
                                 assetMimetype="[text/html,application/vnd.adobe.contentfragment]"
                                 droptarget="contentfragment"
                                 resourceType="venia/components/contentfragment"/>
-                            <mapping_1575030271082 jcr:primaryType="nt:unstructured" 
-                                assetGroup="product" 
-                                droptarget="product-data-reference" 
-                                resourceType="venia/components/commerce/productteaser" />
+                            <mapping_1575030271082
+                                jcr:primaryType="nt:unstructured"
+                                assetGroup="product"
+                                droptarget="product-data-reference"
+                                resourceType="venia/components/commerce/productteaser"/>
                         </assetToComponentMapping>
                     </cq:authoring>
                 </policy_1575040440977>
@@ -316,11 +345,34 @@
             <teaser jcr:primaryType="nt:unstructured">
                 <policy_1575031387650
                     jcr:description="Sets the title size to H3."
+                    jcr:lastModified="{Date}2020-08-24T20:43:47.467+10:00"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Content Teaser"
                     sling:resourceType="wcm/core/components/policy/policy"
                     titleType="h3">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0 jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-teaser-banner"
+                                    cq:styleId="1598234829044"
+                                    cq:styleLabel="Banner"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="cmp-teaser-feature-left"
+                                    cq:styleId="1598234832984"
+                                    cq:styleLabel="Feature - Left"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleClasses="cmp-teaser-feature-right"
+                                    cq:styleId="1598234837354"
+                                    cq:styleLabel="Feature - right"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
                 </policy_1575031387650>
             </teaser>
             <download jcr:primaryType="nt:unstructured">
@@ -357,8 +409,8 @@
                         jcr:primaryType="nt:unstructured"
                         jcr:title="AEM CIF Core Components Product List"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        showTitle="true"
-                        showImage="true">
+                        showImage="true"
+                        showTitle="true">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
                         <cq:styleGroups jcr:primaryType="nt:unstructured">
                             <item0
@@ -366,20 +418,51 @@
                                 jcr:primaryType="nt:unstructured">
                                 <cq:styles jcr:primaryType="nt:unstructured">
                                     <item0
-                                        jcr:primaryType="nt:unstructured"
                                         cq:styleClasses="category__style_grid"
                                         cq:styleId="1570700958199"
-                                        cq:styleLabel="Grid" />
+                                        cq:styleLabel="Grid"
+                                        jcr:primaryType="nt:unstructured"/>
                                     <item1
-                                        jcr:primaryType="nt:unstructured"
                                         cq:styleClasses="category__style_list"
                                         cq:styleId="1570700958900"
-                                        cq:styleLabel="List" />
+                                        cq:styleLabel="List"
+                                        jcr:primaryType="nt:unstructured"/>
                                 </cq:styles>
                             </item0>
                         </cq:styleGroups>
                     </default>
                 </productlist>
+                <teaser jcr:primaryType="nt:unstructured">
+                    <policy_1598234679797
+                        jcr:lastModified="{Date}2020-08-24T12:06:02.839+10:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Venia - Teaser"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0 jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="cmp-teaser-banner"
+                                        cq:styleId="1598234697359"
+                                        cq:styleLabel="Banner"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item1
+                                        cq:styleClasses="cmp-teaser-feature-left"
+                                        cq:styleId="1598234698241"
+                                        cq:styleLabel="Feature - Left"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item2
+                                        cq:styleClasses="cmp-teaser-feature-right"
+                                        cq:styleId="1598234699118"
+                                        cq:styleLabel="Feature - Right"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                        </cq:styleGroups>
+                    </policy_1598234679797>
+                </teaser>
             </commerce>
         </components>
     </venia>
