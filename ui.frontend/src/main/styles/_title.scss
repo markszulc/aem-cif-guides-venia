@@ -1,3 +1,24 @@
-.cmp-title {}
+.cmp-title {
+
+    text-align: center;
+
+    font-family: 'Source Serif Pro';
+    font-size: 40px !important;
+    font-weight: 400 !important;
+    margin-bottom: 10px;
+
+    line-height: 1.25em;
+    letter-spacing: 0.32px;
+    color: #172026;
+    opacity: 1;
+
+@media screen and (min-width: 790px) {
+    padding-top: 20px;
+    
+    h1 {
+    font-size: 2rem!important;
+    }
+}
+}
 .cmp-title__text {}
 .cmp-title__link {}

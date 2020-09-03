@@ -1,6 +1,15 @@
 $color-foreground: #202020;
 $color-background: #ffffff;
 
+//== Layout
+$gutter-padding: 14px;
+$max-width: 1440px;
+$max-body-width: 1136px;
+$screen-xsmall: 475px;
+$screen-small: 767px;
+$screen-medium: 1024px;
+$screen-large: 1200px;
+
 $venia-anim-bounce: cubic-bezier(0.5, 1.8, 0.9, 0.8);
 $venia-anim-in: cubic-bezier(0, 0, 0.2, 1);
 $venia-anim-out: cubic-bezier(0.4, 0, 1, 1);

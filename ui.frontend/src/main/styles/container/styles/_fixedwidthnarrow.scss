@@ -1,0 +1,12 @@
+.cmp-container--fixedwidthnarrow {
+    @media (min-width: $screen-medium + 1) {
+      display:block;
+      max-width:  1000px !important;
+      float: unset !important;
+      margin: 0 auto;
+
+      padding: 0;
+      clear: both !important; 
+    }
+  
+  }

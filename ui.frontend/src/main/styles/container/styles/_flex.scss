@@ -1,0 +1,16 @@
+
+
+.cmp-container--flex > .cmp-container {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 30px !important;
+    flex-wrap: wrap;
+    flex-direction: row;
+  
+
+
+  @media (max-width:650px) {
+    gap: 0px;
+}
+
+}
