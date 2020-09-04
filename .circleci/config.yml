@@ -59,6 +59,16 @@ jobs:
             - ~/.m2
           key: maven-repo-v1-{{ checksum "pom.xml" }}
 
+  start-magento:
+    executor: cif_executor
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: Start Magento and install sample content
+          working_directory: .circleci
+          command: bash install-magento.sh
+
   deploy-sample:
     executor: cif_executor
 
@@ -85,12 +95,14 @@ workflows:
           filters:
             tags:
               only: /.*/
-
       - build-classic:
           filters:
             tags:
               only: /.*/
-
+      - start-magento:
+          filters:
+            tags:
+              only: /.*/
       - deploy-sample:
           requires:
             - build
