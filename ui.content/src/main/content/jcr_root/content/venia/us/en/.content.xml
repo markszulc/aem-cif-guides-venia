@@ -1,47 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" 
-    xmlns:cq="http://www.day.com/jcr/cq/1.0" 
-    xmlns:jcr="http://www.jcp.org/jcr/1.0" 
-    xmlns:nt="http://www.jcp.org/jcr/nt/1.0" 
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
-    <jcr:content cq:contextHubPath="/etc/cloudsettings/default/contexthub" 
-        cq:contextHubSegmentsPath="/etc/segmentation/contexthub" 
-        cq:template="/conf/venia/settings/wcm/templates/landing-page" 
-        cq:allowedTemplates="[/conf/venia/settings/wcm/templates/(?!(landing|root)).*]" 
-        cq:cifCategoryPage="/content/venia/us/en/products/category-page" 
-        cq:cifProductPage="/content/venia/us/en/products/product-page" 
+    <jcr:content
+        cq:allowedTemplates="[/conf/venia/settings/wcm/templates/(?!(landing|root)).*]"
+        cq:cifCategoryPage="/content/venia/us/en/products/category-page"
+        cq:cifProductPage="/content/venia/us/en/products/product-page"
         cq:cifSearchResultsPage="/content/venia/us/en/search"
+        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
+        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2020-09-21T22:09:23.884+10:00"
+        cq:lastModifiedBy="admin"
+        cq:lastRolledout="{Date}2020-09-21T22:09:23.885+10:00"
+        cq:lastRolledoutBy="admin"
         cq:propertyInheritanceCancelled="[jcr:language]"
+        cq:template="/conf/venia/settings/wcm/templates/landing-page"
         jcr:mixinTypes="[cq:LiveRelationship,cq:LiveSync,cq:PropertyLiveSyncCancelled]"
-        jcr:primaryType="cq:PageContent" 
+        jcr:primaryType="cq:PageContent"
         jcr:title="Venia Demo Store - Home"
-        navRoot="{Boolean}true" 
-        sling:resourceType="venia/components/page" 
+        sling:resourceType="venia/components/page"
+        navRoot="{Boolean}true"
         pageTitle="Venia">
-        <root jcr:primaryType="nt:unstructured"
+        <root
+            cq:lastRolledout="{Date}2020-09-21T22:09:23.823+10:00"
+            cq:lastRolledoutBy="admin"
             jcr:mixinTypes="[cq:LiveRelationship]"
-            sling:resourceType="venia/components/container" 
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="venia/components/container"
             layout="responsiveGrid">
-            <container jcr:primaryType="nt:unstructured"
+            <container
+                cq:lastRolledout="{Date}2020-09-21T22:09:23.825+10:00"
+                cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
+                jcr:primaryType="nt:unstructured"
                 sling:resourceType="venia/components/container">
-                <container jcr:primaryType="nt:unstructured"
+                <container
+                    cq:lastRolledout="{Date}2020-09-21T22:09:23.828+10:00"
+                    cq:lastRolledoutBy="admin"
+                    cq:styleIds="[1598175947881]"
                     jcr:mixinTypes="[cq:LiveRelationship]"
-                    sling:resourceType="venia/components/container" 
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="venia/components/container"
                     layout="responsiveGrid">
-                    <heroimage
-                        jcr:mixinTypes="[cq:LiveRelationship]" 
-                        jcr:primaryType="nt:unstructured" 
-                        sling:resourceType="venia/components/heroimage" 
-                        fileReference="/content/dam/venia/landing_page_hero.jpg" 
-                        heading="All-new reference storefront" 
-                        title="venia" />
+                    <teaser
+                        cq:lastRolledout="{Date}2020-09-21T22:09:23.839+10:00"
+                        cq:lastRolledoutBy="admin"
+                        cq:styleIds="[1598234829044]"
+                        jcr:created="{Date}2020-08-23T19:49:16.971+10:00"
+                        jcr:createdBy="admin"
+                        jcr:description="&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis mattis aliquam faucibus purus.&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2020-08-23T19:54:20.367+10:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:mixinTypes="[cq:LiveRelationship]"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Shop the New Outerwear Collection"
+                        sling:resourceType="venia/components/teaser"
+                        actionsEnabled="true"
+                        descriptionFromPage="false"
+                        fileReference="/content/dam/venia/temp/venia-hero1.jpg"
+                        textIsRich="true"
+                        titleFromPage="false">
+                        <actions
+                            cq:lastRolledout="{Date}2020-09-21T22:09:23.841+10:00"
+                            cq:lastRolledoutBy="admin"
+                            jcr:mixinTypes="[cq:LiveRelationship]"
+                            jcr:primaryType="nt:unstructured">
+                            <item0
+                                cq:lastRolledout="{Date}2020-09-21T22:09:23.844+10:00"
+                                cq:lastRolledoutBy="admin"
+                                jcr:mixinTypes="[cq:LiveRelationship]"
+                                jcr:primaryType="nt:unstructured"
+                                link="/content/venia/us/en"
+                                text="SHOP NOW"/>
+                        </actions>
+                    </teaser>
+                    <featuredcategorylist
+                        cq:lastRolledout="{Date}2020-09-21T22:09:23.847+10:00"
+                        cq:lastRolledoutBy="admin"
+                        jcr:created="{Date}2020-08-23T19:54:39.497+10:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2020-08-23T19:55:32.541+10:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:mixinTypes="[cq:LiveRelationship]"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Shop by category"
+                        sling:resourceType="venia/components/commerce/featuredcategorylist">
+                        <items
+                            cq:lastRolledout="{Date}2020-09-21T22:09:23.852+10:00"
+                            cq:lastRolledoutBy="admin"
+                            jcr:mixinTypes="[cq:LiveRelationship]"
+                            jcr:primaryType="nt:unstructured">
+                            <item0
+                                cq:lastRolledout="{Date}2020-09-21T22:09:23.855+10:00"
+                                cq:lastRolledoutBy="admin"
+                                jcr:mixinTypes="[cq:LiveRelationship]"
+                                jcr:primaryType="nt:unstructured"
+                                categoryId="19"/>
+                            <item1
+                                cq:lastRolledout="{Date}2020-09-21T22:09:23.857+10:00"
+                                cq:lastRolledoutBy="admin"
+                                jcr:mixinTypes="[cq:LiveRelationship]"
+                                jcr:primaryType="nt:unstructured"
+                                categoryId="28"/>
+                            <item2
+                                cq:lastRolledout="{Date}2020-09-21T22:09:23.861+10:00"
+                                cq:lastRolledoutBy="admin"
+                                jcr:mixinTypes="[cq:LiveRelationship]"
+                                jcr:primaryType="nt:unstructured"
+                                categoryId="7"/>
+                        </items>
+                    </featuredcategorylist>
+                    <teaser_340011397
+                        cq:lastRolledout="{Date}2020-09-21T22:09:23.868+10:00"
+                        cq:lastRolledoutBy="admin"
+                        cq:styleIds="[1598234698241]"
+                        jcr:created="{Date}2020-08-24T11:43:04.280+10:00"
+                        jcr:createdBy="admin"
+                        jcr:description="&lt;h3>Lorem Ipsum Dolor Tempor&lt;/h3>&#xd;&#xa;&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor labore&lt;br>&#xd;&#xa;dolore magna lorem ipsum dolor sit dolore magna lorem ipsum dolor sit amet&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2020-08-24T11:45:15.238+10:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:mixinTypes="[cq:LiveRelationship]"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Make a Statement"
+                        sling:resourceType="venia/components/commerce/teaser"
+                        actionsEnabled="true"
+                        descriptionFromPage="false"
+                        fileReference="/content/dam/venia/temp/AdobeStock_268178800_sm.jpg"
+                        textIsRich="true"
+                        titleFromPage="false">
+                        <actions
+                            cq:lastRolledout="{Date}2020-09-21T22:09:23.875+10:00"
+                            cq:lastRolledoutBy="admin"
+                            jcr:mixinTypes="[cq:LiveRelationship]"
+                            jcr:primaryType="nt:unstructured">
+                            <item0
+                                cq:lastRolledout="{Date}2020-09-21T22:09:23.878+10:00"
+                                cq:lastRolledoutBy="admin"
+                                jcr:mixinTypes="[cq:LiveRelationship]"
+                                jcr:primaryType="nt:unstructured"
+                                categoryId="31"
+                                text="Shop Heels"/>
+                            <item1
+                                cq:lastRolledout="{Date}2020-09-21T22:09:23.880+10:00"
+                                cq:lastRolledoutBy="admin"
+                                jcr:mixinTypes="[cq:LiveRelationship]"
+                                jcr:primaryType="nt:unstructured"
+                                categoryId="28"
+                                text="Shop All Shoes"/>
+                        </actions>
+                    </teaser_340011397>
+                    <experiencefragment
+                        cq:lastRolledout="{Date}2020-09-21T22:09:23.882+10:00"
+                        cq:lastRolledoutBy="admin"
+                        jcr:created="{Date}2020-08-24T21:20:37.453+10:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2020-08-31T20:59:27.119+10:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:mixinTypes="[cq:LiveRelationship]"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="venia/components/experiencefragment"
+                        fragmentVariationPath="/content/experience-fragments/venia/us/en/choosing-the-right-running-shoe/hero-banner"/>
+                    <productcarousel
+                        cq:lastRolledout="{Date}2020-09-21T22:09:23.885+10:00"
+                        cq:lastRolledoutBy="admin"
+                        jcr:created="{Date}2020-08-24T11:34:36.441+10:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2020-08-24T11:40:31.158+10:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:mixinTypes="[cq:LiveRelationship]"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Top Sellers"
+                        sling:resourceType="venia/components/commerce/productcarousel"
+                        product="[VA23,VA24,VA22-SI-NA,VA21-GO-NA,VA20-SI-NA,VA19-GO-NA,VA18-GO-NA,VA17-SI-NA,VA16-GO-NA,VA15-SI-NA]"/>
                 </container>
             </container>
         </root>
-        <cq:LiveSyncConfig cq:isDeep="{Boolean}true" 
-            cq:master="/content/venia/language-masters/en" 
-            cq:rolloutConfigs="[/libs/msm/wcm/rolloutconfigs/default]" 
-            jcr:primaryType="cq:LiveCopy" />
+        <cq:LiveSyncConfig
+            cq:isDeep="{Boolean}true"
+            cq:master="/content/venia/language-masters/en"
+            cq:rolloutConfigs="[/libs/msm/wcm/rolloutconfigs/default]"
+            jcr:primaryType="cq:LiveCopy"/>
     </jcr:content>
+    <products/>
+    <search/>
+    <my-account/>
+    <articles/>
 </jcr:root>

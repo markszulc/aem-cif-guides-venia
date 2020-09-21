@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2020-09-21T22:09:24.021+10:00"
+        cq:lastModifiedBy="admin"
+        cq:lastRolledout="{Date}2020-09-21T22:09:24.023+10:00"
+        cq:lastRolledoutBy="admin"
+        cq:template="/conf/venia/settings/wcm/templates/article-page"
+        jcr:mixinTypes="[cq:LiveRelationship]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Choosing the Best Running Shoe"
+        sling:resourceType="venia/components/page"
+        socialMedia="[pinterest]">
+        <root
+            cq:lastRolledout="{Date}2020-09-21T22:09:24.011+10:00"
+            cq:lastRolledoutBy="admin"
+            jcr:mixinTypes="[cq:LiveRelationship]"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="venia/components/container">
+            <container
+                cq:lastRolledout="{Date}2020-09-21T22:09:24.015+10:00"
+                cq:lastRolledoutBy="admin"
+                cq:styleIds="[1598837760720]"
+                jcr:mixinTypes="[cq:LiveRelationship]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="venia/components/container"
+                layout="responsiveGrid">
+                <dynamicmedia
+                    cq:lastRolledout="{Date}2020-09-21T22:09:24.020+10:00"
+                    cq:lastRolledoutBy="admin"
+                    jcr:created="{Date}2020-09-11T04:37:50.475Z"
+                    jcr:createdBy="MSZULC@ADOBE.COM"
+                    jcr:lastModified="{Date}2020-09-21T22:09:24.017+10:00"
+                    jcr:lastModifiedBy="MSZULC@ADOBE.COM"
+                    jcr:mixinTypes="[cq:LiveRelationship]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="dam/components/scene7/dynamicmedia"
+                    assetID="adobeanz/AdobeStock_216965354_Video_HD_Preview-AVS"
+                    assetType="VideoAVS"
+                    breakpoints=""
+                    fileReference="/content/dam/venia/video/AdobeStock_216965354_Video_HD_Preview.mov"
+                    imageserverurl="http://localhost:4503/is/image/"
+                    s7ImagePreset=""
+                    s7PresetType="undefined"
+                    s7ViewerPreset=""
+                    s7ViewerPresetPath=""
+                    urlModifiers=""
+                    videoserverurl="http://localhost:4503/is/content/"
+                    viewerPath="http://s7ap1.scene7.com/s7viewers/"/>
+                <contentfragment
+                    cq:lastRolledout="{Date}2020-09-21T22:09:24.022+10:00"
+                    cq:lastRolledoutBy="admin"
+                    jcr:created="{Date}2020-08-31T10:31:31.739+10:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-09-21T22:09:24.021+10:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:mixinTypes="[cq:LiveRelationship]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/experience-fragments/editor/components/experiencefragment"
+                    fragmentPath="/content/experience-fragments/venia/us/en/choosing-the-right-running-shoe/master"
+                    text="Choosing the Best Running Shoe Choosing the right shoe It seems easy enough? Right? Well, not really. Running is a pretty simple sport that requires very little in the way of equipment. That's part of the beauty of it. Put on your running shoes and you’re off. But what happens if your shoes aren't just right for your feet? The wrong running shoes can actually do more harm than good and lead to injuries. This is why it is vital that you understand the differences between shoe types and learn which type is right for you. Racing Racing shoes typically have very little support and are very light weight. Many runners use them only for racing. This type of shoe is really only for those runners who are bio-mechanically efficient and for whom a lighter shoe will make a difference. If you are a competitive runner and are looking for that slight edge then maybe a racing shoe is for you. Performance Training A Performance Training shoe is a lighter, well-balanced shoe that can be used for racing, speed training, or daily training. These shoes are typically worn by the more efficient runner who is training at a fast pace. While not as light as the pure racing shoe they are also not as heavy as the average training shoe. If you are an overpronator be careful using this type of shoe for your daily training as they typically are not as supportive as the Motion Control and Stability Shoes. New Celeritas Running Shoes-8 $100.00 See more details Trail If you run off road on trails then you should definitely consider a trail shoe. These shoes will have better traction to deal with the various conditions found on trails. Some models will also have varying degrees of water-resistant features which will come in handy when running through those mountain creeks or in adverse weather conditions. Trail shoes are typically a little heavier than your average training shoes due to their hefty outer-soles."/>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

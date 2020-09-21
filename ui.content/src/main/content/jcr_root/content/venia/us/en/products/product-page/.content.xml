@@ -1,30 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" 
-    xmlns:cq="http://www.day.com/jcr/cq/1.0" 
-    xmlns:jcr="http://www.jcp.org/jcr/1.0" 
-    xmlns:nt="http://www.jcp.org/jcr/nt/1.0" 
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
-    <jcr:content cq:template="/conf/venia/settings/wcm/templates/product-page" 
-        jcr:mixinTypes="[cq:LiveRelationship]" 
-        jcr:primaryType="cq:PageContent" 
+    <jcr:content
+        cq:lastModified="{Date}2020-09-21T22:09:23.932+10:00"
+        cq:lastModifiedBy="admin"
+        cq:lastRolledout="{Date}2020-09-21T22:09:23.933+10:00"
+        cq:lastRolledoutBy="admin"
+        cq:template="/conf/venia/settings/wcm/templates/product-page"
+        jcr:mixinTypes="[cq:LiveRelationship]"
+        jcr:primaryType="cq:PageContent"
         jcr:title="Venia Demo Store - Product page"
         sling:resourceType="venia/components/page">
-        <root jcr:primaryType="nt:unstructured"
-            jcr:mixinTypes="[cq:LiveRelationship]"  
-            sling:resourceType="venia/components/container" 
+        <root
+            cq:lastRolledout="{Date}2020-09-21T22:09:23.926+10:00"
+            cq:lastRolledoutBy="admin"
+            jcr:mixinTypes="[cq:LiveRelationship]"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="venia/components/container"
             layout="responsiveGrid">
-            <container jcr:primaryType="nt:unstructured"
-                jcr:mixinTypes="[cq:LiveRelationship]" 
+            <container
+                cq:lastRolledout="{Date}2020-09-21T22:09:23.927+10:00"
+                cq:lastRolledoutBy="admin"
+                jcr:mixinTypes="[cq:LiveRelationship]"
+                jcr:primaryType="nt:unstructured"
                 sling:resourceType="venia/components/container">
-                <container jcr:primaryType="nt:unstructured"
-                    jcr:mixinTypes="[cq:LiveRelationship]" 
-                    sling:resourceType="venia/components/container" 
+                <container
+                    cq:lastRolledout="{Date}2020-09-21T22:09:23.929+10:00"
+                    cq:lastRolledoutBy="admin"
+                    jcr:mixinTypes="[cq:LiveRelationship]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="venia/components/container"
                     layout="responsiveGrid">
-                    <product jcr:primaryType="nt:unstructured"
+                    <product
+                        cq:lastRolledout="{Date}2020-09-21T22:09:23.931+10:00"
+                        cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:LiveRelationship]"
-                        sling:resourceType="venia/components/commerce/product" />
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="venia/components/commerce/product"/>
+                    <productcarousel
+                        cq:lastRolledout="{Date}2020-09-21T22:09:23.933+10:00"
+                        cq:lastRolledoutBy="admin"
+                        jcr:created="{Date}2020-08-24T21:06:19.698+10:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2020-08-24T21:18:22.648+10:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:mixinTypes="[cq:LiveRelationship]"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="venia/components/commerce/productcarousel"
+                        product="[VA04,VA03,VA01]"/>
                 </container>
             </container>
         </root>
     </jcr:content>
+    <shoes/>
 </jcr:root>
