@@ -13,4 +13,9 @@
     <article-page/>
     <experience-fragment-template-pinterest/>
     <experience-fragment-template-facebook/>
+    <xf-mobile-variation/>
+    <xf-amazon-echo/>
+    <xf-digital-signage/>
+    <xf-email/>
+    <xf-display-ad/>
 </jcr:root>
