@@ -5,4 +5,8 @@
     <xf/>
     <rep:policy/>
     <page/>
+    <xf-mobile/>
+    <xf-screens/>
+    <xf-alexa/>
+    <xf-chat/>
 </jcr:root>

@@ -13,7 +13,12 @@
                         jcr:title="Content Form"
                         sling:resourceType="wcm/core/components/policy/policy"
                         components="[/apps/venia/components/form/button,/apps/venia/components/form/hidden,/apps/venia/components/form/options,/apps/venia/components/form/text]">
-                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <jcr:content
+                            cq:lastReplicated="{Date}2020-09-08T10:50:23.109Z"
+                            cq:lastReplicatedBy="MSZULC@ADOBE.COM"
+                            cq:lastReplicationAction="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus]"
+                            jcr:primaryType="nt:unstructured"/>
                     </form-container>
                 </container>
             </form>
@@ -30,6 +35,8 @@
             <image jcr:primaryType="nt:unstructured">
                 <policy_651483963895698
                     jcr:description="- Enable lazy loading for faster page loading.&#xd;&#xa;- Define allowed image widths for automatic loading of the image in the most optimal resolution, given the size at which each image is displayed on the page, and the visitor's pixel density.&#xd;&#xa;- Disallow direct asset upload, to force authors to first upload the images to Assets."
+                    jcr:lastModified="{Date}2020-09-28T11:21:21.632+10:00"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Content Image"
                     sling:resourceType="wcm/core/components/policy/policy"
@@ -42,7 +49,12 @@
                     jpegQuality="{Long}85"
                     titleValueFromDAM="true"
                     uuidDisabled="true">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:lastReplicated="{Date}2020-09-08T10:50:23.109Z"
+                        cq:lastReplicatedBy="MSZULC@ADOBE.COM"
+                        cq:lastReplicationAction="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus]"
+                        jcr:primaryType="nt:unstructured"/>
                     <plugins jcr:primaryType="nt:unstructured">
                         <crop
                             jcr:primaryType="nt:unstructured"
@@ -71,7 +83,7 @@
                             features="right"/>
                         <flip
                             jcr:primaryType="nt:unstructured"
-                            features="-"/>
+                            features="horizontal,vertical"/>
                     </plugins>
                 </policy_651483963895698>
             </image>
@@ -80,7 +92,12 @@
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Content Text"
                     sling:resourceType="wcm/core/components/policy/policy">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:lastReplicated="{Date}2020-09-08T10:50:23.109Z"
+                        cq:lastReplicatedBy="MSZULC@ADOBE.COM"
+                        cq:lastReplicationAction="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus]"
+                        jcr:primaryType="nt:unstructured"/>
                     <rtePlugins jcr:primaryType="nt:unstructured">
                         <paraformat
                             jcr:primaryType="nt:unstructured"
@@ -173,7 +190,12 @@
                     allowedTypes="h1"
                     linkDisabled="true"
                     type="h1">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:lastReplicated="{Date}2020-09-08T10:50:23.109Z"
+                        cq:lastReplicatedBy="MSZULC@ADOBE.COM"
+                        cq:lastReplicationAction="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus]"
+                        jcr:primaryType="nt:unstructured"/>
                 </policy_641475696923109>
                 <policy_641528232375303
                     jcr:description="Allows all sizes, but not H1, which is reserved for the main page title."
@@ -183,7 +205,12 @@
                     allowedTypes="[h2,h3,h4,h5,h6]"
                     linkDisabled="false"
                     type="h2">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:lastReplicated="{Date}2020-09-08T10:50:23.109Z"
+                        cq:lastReplicatedBy="MSZULC@ADOBE.COM"
+                        cq:lastReplicationAction="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus]"
+                        jcr:primaryType="nt:unstructured"/>
                 </policy_641528232375303>
             </title>
             <experiencefragment jcr:primaryType="nt:unstructured">
@@ -193,7 +220,12 @@
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Header"
                     sling:resourceType="wcm/core/components/policy/policy">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:lastReplicated="{Date}2020-09-08T10:50:23.109Z"
+                        cq:lastReplicatedBy="MSZULC@ADOBE.COM"
+                        cq:lastReplicationAction="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus]"
+                        jcr:primaryType="nt:unstructured"/>
                 </policy_header>
                 <policy_footer
                     cq:styleDefaultElement="footer"
@@ -201,7 +233,12 @@
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Footer"
                     sling:resourceType="wcm/core/components/policy/policy">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:lastReplicated="{Date}2020-09-08T10:50:23.109Z"
+                        cq:lastReplicatedBy="MSZULC@ADOBE.COM"
+                        cq:lastReplicationAction="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus]"
+                        jcr:primaryType="nt:unstructured"/>
                 </policy_footer>
             </experiencefragment>
             <container jcr:primaryType="nt:unstructured">
@@ -214,7 +251,12 @@
                     sling:resourceType="wcm/core/components/policy/policy"
                     components="[group:Venia - Content,/apps/venia/components/form/container,group:Venia - Structure]"
                     layoutDisabled="false">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:lastReplicated="{Date}2020-09-08T10:50:23.109Z"
+                        cq:lastReplicatedBy="MSZULC@ADOBE.COM"
+                        cq:lastReplicationAction="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus]"
+                        jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
                             <mapping_1575024218483
@@ -251,14 +293,19 @@
                 </policy_1574694950110>
                 <policy_1574695586800
                     jcr:description="Allows the page components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
-                    jcr:lastModified="{Date}2020-08-24T11:29:57.745+10:00"
-                    jcr:lastModifiedBy="admin"
+                    jcr:lastModified="{Date}2020-09-08T05:21:24.535Z"
+                    jcr:lastModifiedBy="MSZULC@ADOBE.COM"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Content"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:Venia - Commerce,group:Venia - Content,/apps/venia/components/form/container]"
+                    components="[/libs/dam/components/scene7/dimensionalmedia,/libs/dam/components/scene7/dynamicmedia,/libs/dam/components/scene7/interactivemedia,/libs/dam/components/scene7/panoramicmedia,/libs/dam/components/scene7/smartcropvideo,/libs/dam/components/scene7/video360media,group:Venia - Commerce,group:Venia - Content,/apps/venia/components/form/container]"
                     layoutDisabled="false">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:lastReplicated="{Date}2020-09-08T10:50:23.109Z"
+                        cq:lastReplicatedBy="MSZULC@ADOBE.COM"
+                        cq:lastReplicationAction="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus]"
+                        jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
                             <mapping_1575030255082
@@ -294,6 +341,11 @@
                                     cq:styleId="1598175947881"
                                     cq:styleLabel="Fixed Width"
                                     jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="cmp-container--fixedwidthnarrow"
+                                    cq:styleId="1598837760720"
+                                    cq:styleLabel="Fixed Width - Narrow"
+                                    jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item0>
                     </cq:styleGroups>
@@ -304,14 +356,22 @@
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Main"
                     sling:resourceType="wcm/core/components/policy/policy">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:lastReplicated="{Date}2020-09-08T10:50:23.109Z"
+                        cq:lastReplicatedBy="MSZULC@ADOBE.COM"
+                        cq:lastReplicationAction="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus]"
+                        jcr:primaryType="nt:unstructured"/>
                 </policy_649128221558427>
                 <policy_1575040440977
                     jcr:description="Allows the template components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
+                    jcr:lastModified="{Date}2020-09-28T11:40:28.654+10:00"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="XF Root"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:Venia - Content,group:Venia - Commerce,/apps/venia/components/form/container]">
+                    components="[group:Venia - Commerce,group:Venia - Content,/apps/venia/components/form/container]"
+                    layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -340,18 +400,39 @@
                                 resourceType="venia/components/commerce/productteaser"/>
                         </assetToComponentMapping>
                     </cq:authoring>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0 jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-container--fixedwidth"
+                                    cq:styleId="1598849507174"
+                                    cq:styleLabel="Fixed Width (Preview)"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="cmp-container--amazon"
+                                    cq:styleId="1601257210574"
+                                    cq:styleLabel="Amazon Echo"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
                 </policy_1575040440977>
             </container>
             <teaser jcr:primaryType="nt:unstructured">
                 <policy_1575031387650
                     jcr:description="Sets the title size to H3."
-                    jcr:lastModified="{Date}2020-08-24T20:43:47.467+10:00"
+                    jcr:lastModified="{Date}2020-09-28T11:26:14.492+10:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Content Teaser"
                     sling:resourceType="wcm/core/components/policy/policy"
                     titleType="h3">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:lastReplicated="{Date}2020-09-08T10:50:23.109Z"
+                        cq:lastReplicatedBy="MSZULC@ADOBE.COM"
+                        cq:lastReplicationAction="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus]"
+                        jcr:primaryType="nt:unstructured"/>
                     <cq:styleGroups jcr:primaryType="nt:unstructured">
                         <item0 jcr:primaryType="nt:unstructured">
                             <cq:styles jcr:primaryType="nt:unstructured">
@@ -386,7 +467,12 @@
                     displayFormat="true"
                     displaySize="true"
                     titleType="h3">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:lastReplicated="{Date}2020-09-08T10:50:23.109Z"
+                        cq:lastReplicatedBy="MSZULC@ADOBE.COM"
+                        cq:lastReplicationAction="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus]"
+                        jcr:primaryType="nt:unstructured"/>
                 </policy_1575032193319>
             </download>
             <page jcr:primaryType="nt:unstructured">
@@ -397,8 +483,22 @@
                     sling:resourceType="wcm/core/components/policy/policy"
                     clientlibs="[venia.dependencies,venia.site]"
                     clientlibsJsHead="venia.dependencies">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        cq:lastReplicated="{Date}2020-09-08T10:50:23.109Z"
+                        cq:lastReplicatedBy="MSZULC@ADOBE.COM"
+                        cq:lastReplicationAction="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus]"
+                        jcr:primaryType="nt:unstructured"/>
                 </policy>
+                <policy_114754857950311
+                    jcr:lastModified="{Date}2020-09-28T11:38:45.512+10:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Venia XF"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    clientlibs="venia.site">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_114754857950311>
             </page>
             <commerce jcr:primaryType="nt:unstructured">
                 <productlist jcr:primaryType="nt:unstructured">
@@ -434,7 +534,7 @@
                 </productlist>
                 <teaser jcr:primaryType="nt:unstructured">
                     <policy_1598234679797
-                        jcr:lastModified="{Date}2020-08-24T12:06:02.839+10:00"
+                        jcr:lastModified="{Date}2020-08-31T17:45:15.554+10:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Venia - Teaser"
@@ -464,6 +564,69 @@
                     </policy_1598234679797>
                 </teaser>
             </commerce>
+            <xfpage jcr:primaryType="nt:unstructured">
+                <policy_1601261564048
+                    cq:styleDefaultClasses="cmp-container--xfbackground"
+                    jcr:lastModified="{Date}2020-09-28T12:53:17.896+10:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Venia - XF - Amazon"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    clientlibs="venia.site">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1601261564048>
+            </xfpage>
+            <xfmobile jcr:primaryType="nt:unstructured">
+                <policy_1601270859584
+                    jcr:lastModified="{Date}2020-09-28T17:04:46.020+10:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Venia - Experience Fragments"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    clientlibs="[venia.site,venia.dependencies]"
+                    clientlibsJsHead="venia.dependencies">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1601270859584>
+            </xfmobile>
+            <xfscreens jcr:primaryType="nt:unstructured">
+                <policy_1601285041226
+                    jcr:lastModified="{Date}2020-09-28T19:24:30.002+10:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Venia - Experience Fragments"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    clientlibs="[venia.site,venia.dependancies]">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1601285041226>
+            </xfscreens>
+            <xfalexa jcr:primaryType="nt:unstructured">
+                <policy_1601285183033
+                    jcr:lastModified="{Date}2020-09-28T19:26:55.155+10:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Venia - Experience Fragments"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    clientlibs="[venia.site,venia.dependancies]">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1601285183033>
+            </xfalexa>
         </components>
     </venia>
+    <wcm jcr:primaryType="nt:unstructured">
+        <foundation jcr:primaryType="nt:unstructured">
+            <components jcr:primaryType="nt:unstructured">
+                <responsivegrid jcr:primaryType="nt:unstructured">
+                    <policy_113484281775923
+                        jcr:lastModified="{Date}2020-09-28T20:09:50.884+10:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Venia - Experience Fragments"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/apps/venia/components/commerce/teaser,/apps/venia/components/commerce/productteaser,/apps/venia/components/contentfragment,/apps/venia/components/image,/apps/venia/components/list,/apps/venia/components/teaser,/apps/venia/components/text,/apps/venia/components/title]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_113484281775923>
+                </responsivegrid>
+            </components>
+        </foundation>
+    </wcm>
 </jcr:root>

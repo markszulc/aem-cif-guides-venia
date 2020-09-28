@@ -14,37 +14,15 @@
   ~ limitations under the License.
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/-->
 
-<sly data-sly-use.coralui2="/libs/granite/sightly/templates/clientlib.html"
-     data-sly-call="${ coralui2.css @ categories='coralui2'}"/>
 
-<sly data-sly-use.mobileapp="/libs/granite/sightly/templates/clientlib.html"
-     data-sly-call="${ mobileapp.css @ categories='securbank.experience-fragments.mobileapp'}"/>
-
-<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
-     data-sly-call="${clientlib.js @ categories='securbank.dependencies'}"/>
-<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
-     data-sly-call="${clientlib.css @ categories='securbank.base'}"/>
-
-
-<!--App decoration wrapper-->
-<div class="xf-mobileapp-body">
-    <div class="xf-mobileapp-content">
-        <sly data-sly-include="app-top.html"/>
-
-
-        <!--Actual editable content-->
-        <sly data-sly-use.body="body.js"
-             data-sly-use.templatedContainer="com.day.cq.wcm.foundation.TemplatedContainer"/>
-        <sly data-sly-test="${!templatedContainer.hasStructureSupport}"
-             data-sly-resource="${body.resourcePath @ resourceType='wcm/foundation/components/parsys'}"/>
-        <sly data-sly-test="${templatedContainer.hasStructureSupport}"
-             data-sly-repeat.child="${templatedContainer.structureResources}"
-             data-sly-resource="${child.path @ resourceType=child.resourceType, decorationTagName='div'}"/>
-        <div data-sly-resource="${'cloudservices' @ resourceType='cq/cloudserviceconfigs/components/servicecomponents'}"
-             data-sly-unwrap></div>
-        <sly data-sly-include="footerlibs.html"/>
-
-        <!--App bottom decoration-->
-        <sly data-sly-include="app-bottom.html"/>
-    </div>
+<sly data-sly-use.body="body.js" data-sly-use.templatedContainer="com.day.cq.wcm.foundation.TemplatedContainer"/>
+<sly data-sly-test="${!templatedContainer.hasStructureSupport}"
+     data-sly-resource="${body.resourcePath @ resourceType='wcm/foundation/components/parsys'}"/>
+<div class="cmp-container--app">
+    <sly data-sly-test="${templatedContainer.hasStructureSupport}"
+         data-sly-repeat.child="${templatedContainer.structureResources}"
+         data-sly-resource="${child.path @ resourceType=child.resourceType, decorationTagName='div'}"/>
 </div>
+<div data-sly-resource="${'cloudservices' @ resourceType='cq/cloudserviceconfigs/components/servicecomponents'}"
+     data-sly-unwrap></div>
+<sly data-sly-include="footerlibs.html"/>

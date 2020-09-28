@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Template">
+    <jcr:content
+        cq:lastModified="{Date}2020-09-28T19:42:59.822+10:00"
+        cq:lastModifiedBy="admin"
+        cq:templateType="/conf/venia/settings/wcm/template-types/xf-screens"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Screens"
+        status="enabled"/>
+</jcr:root>
