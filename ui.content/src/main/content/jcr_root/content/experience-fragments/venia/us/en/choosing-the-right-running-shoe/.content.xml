@@ -12,9 +12,8 @@
     <master/>
     <hero-banner/>
     <feature/>
-    <retail-store-screen/>
-    <alexa/>
     <email-newsletter/>
-    <facebook/>
-    <pinterest/>
+    <alexa/>
+    <native-app/>
+    <in-store-screens/>
 </jcr:root>

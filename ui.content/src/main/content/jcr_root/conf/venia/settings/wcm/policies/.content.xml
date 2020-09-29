@@ -421,7 +421,7 @@
             <teaser jcr:primaryType="nt:unstructured">
                 <policy_1575031387650
                     jcr:description="Sets the title size to H3."
-                    jcr:lastModified="{Date}2020-09-28T11:26:14.492+10:00"
+                    jcr:lastModified="{Date}2020-09-29T13:51:37.702+10:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Content Teaser"
@@ -451,8 +451,35 @@
                                     cq:styleId="1598234837354"
                                     cq:styleLabel="Feature - right"
                                     jcr:primaryType="nt:unstructured"/>
+                                <item3
+                                    cq:styleClasses="cmp-teaser-nativeapp"
+                                    cq:styleId="1601338654436"
+                                    cq:styleLabel="Native App"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item4
+                                    cq:styleClasses="cmp-teaser-screens"
+                                    cq:styleId="1601340478196"
+                                    cq:styleLabel="Screens"
+                                    jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item0>
+                        <item1
+                            cq:styleGroupLabel="Animate"
+                            cq:styleGroupMultiple="true"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="ani-fadetitle"
+                                    cq:styleId="1601345135601"
+                                    cq:styleLabel="Fade Title"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="ani-movepicture"
+                                    cq:styleId="1601351468788"
+                                    cq:styleLabel="Scale Background"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item1>
                     </cq:styleGroups>
                 </policy_1575031387650>
             </teaser>

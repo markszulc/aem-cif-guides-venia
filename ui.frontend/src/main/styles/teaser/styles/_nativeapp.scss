@@ -1,0 +1,67 @@
+.cmp-teaser-nativeapp{ 
+.cmp-teaser {
+
+    max-height: 700px;
+    overflow: hidden;
+}
+.cmp-teaser__image {
+    max-height: 700px;
+
+    img {
+        max-height: 700px;
+    }
+
+}
+.cmp-teaser__content {
+    margin-top: -260px;
+    height: 300px;
+    min-height: 300px;
+    float: left;
+    position: relative;
+    padding: 30px;
+
+}
+.cmp-teaser__title {
+    font-family: 'Source Serif Pro';
+    font-size: 33px !important;
+    font-weight: 600 !important;
+    max-width: 16pc;
+    margin-bottom: 10px;
+    text-align: left;
+    line-height: 0.75em;
+    letter-spacing: 0.32px;
+    color: white;
+    opacity: 1;
+
+}
+.cmp-teaser__title-link {}
+.cmp-teaser__description {
+    margin-bottom: 0.3rem;
+    line-height: 1.5em;
+    font-size: 14px;
+    color: white;
+
+}
+.cmp-teaser__action-container {}
+.cmp-teaser__action-link {
+
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid #00f;
+    border-radius: 1.25rem;
+    display: inline-flex;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    height: 2.5rem;
+    justify-content: center;
+    letter-spacing: 0.25px;
+    margin-right: 0.75rem;
+    margin-top: 0.75rem;
+    min-width: 12rem;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    background-color: #00f;
+    color: white;
+}
+
+}

@@ -1,0 +1,118 @@
+.cmp-teaser-screens{ 
+.cmp-teaser {
+
+    max-height: 940px;
+    overflow: hidden;
+}
+.cmp-teaser__image {
+    max-height: 940px;
+
+    img {
+        max-height: 940px;
+        min-height: 940px;
+    }
+
+}
+.cmp-teaser__content {
+    margin-top: -344px;
+    height: 300px;
+    min-height: 300px;
+    float: left;
+    position: relative;
+    padding: 43px;
+
+}
+.cmp-teaser__title {
+    font-family: 'Source Serif Pro';
+    font-size: 52px !important;
+    font-weight: 600 !important;
+    max-width: 21pc;
+    margin-bottom: 10px;
+    text-align: left;
+    line-height: 0.9em;
+    letter-spacing: 0.32px;
+    color: white;
+    opacity: 1;
+
+}
+.cmp-teaser__title-link {}
+.cmp-teaser__description {
+    margin-bottom: 0.3rem;
+    line-height: 1.5em;
+    font-size: 20px;
+    color: white;
+
+}
+.cmp-teaser__action-container {}
+.cmp-teaser__action-link {
+
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid #00f;
+    border-radius: 1.25rem;
+    display: inline-flex;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    height: 2.5rem;
+    justify-content: center;
+    letter-spacing: 0.25px;
+    margin-right: 0.75rem;
+    margin-top: 0.75rem;
+    min-width: 12rem;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    background-color: #00f;
+    color: white;
+}
+
+}
+
+
+@keyframes titlefade {
+    from {opacity: 1;}
+    to {opacity: 0;}
+  }
+
+  @keyframes picturemove {
+    from {transform: scale(1, 1);}
+    to {transform: scale(1.15, 1.15);}
+  }
+
+
+.ani-movepicture {
+    .cmp-teaser{
+        .cmp-teaser__image{
+        animation-name: picturemove;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-delay: 5s;
+        animation-timing-function: ease-in-out;
+        }
+    }
+}
+
+
+.ani-fadetitle {
+    .cmp-teaser{
+        .cmp-teaser__title {
+    
+        opacity:1;
+        animation-name: titlefade;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-delay: 5s;
+        }
+        .cmp-teaser__description {
+        
+            opacity:1;
+            animation-name: titlefade;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-delay: 5s;
+        }
+    }
+}
+

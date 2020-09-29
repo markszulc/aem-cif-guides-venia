@@ -2,45 +2,38 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2020-08-31T17:45:29.764+10:00"
+        cq:lastModified="{Date}2020-09-29T13:46:10.032+10:00"
         cq:lastModifiedBy="admin"
         cq:tags="[]"
         cq:template="/conf/venia/settings/wcm/templates/xf-web-variation"
         cq:xfVariantType="web"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Feature"
+        jcr:title="Related Offer"
         sling:resourceType="venia/components/xfpage">
         <root
             cq:styleIds="[1598849507174]"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="venia/components/container"
             layout="responsiveGrid">
-            <teaser_340011397_cop
-                cq:styleIds="[1598234698241]"
-                jcr:created="{Date}2020-08-24T11:43:04.280+10:00"
+            <productteaser
+                jcr:created="{Date}2020-09-29T11:51:01.210+10:00"
                 jcr:createdBy="admin"
-                jcr:description="&lt;h3>Lorem Ipsum Dolor Tempor&lt;/h3>&#xd;&#xa;&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor labore&lt;br>&#xd;&#xa;dolore magna lorem ipsum dolor sit dolore magna lorem ipsum dolor sit amet&lt;/p>&#xd;&#xa;"
-                jcr:lastModified="{Date}2020-08-24T11:45:15.238+10:00"
+                jcr:lastModified="{Date}2020-09-29T13:46:00.623+10:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                jcr:title="Make a Statement"
-                sling:resourceType="venia/components/commerce/teaser"
-                actionsEnabled="true"
-                descriptionFromPage="false"
-                fileReference="/content/dam/venia/temp/AdobeStock_268178800_sm.jpg"
-                textIsRich="true"
-                titleFromPage="false">
-                <actions jcr:primaryType="nt:unstructured">
-                    <item0
+                sling:resourceType="venia/components/commerce/productteaser"
+                age="{Long}10"
+                badge="true"
+                cta="add-to-cart"
+                selection="CRS#CRS-8"
+                text="New">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
                         jcr:primaryType="nt:unstructured"
-                        categoryId="31"
-                        text="Shop Heels"/>
-                    <item1
-                        jcr:primaryType="nt:unstructured"
-                        categoryId="28"
-                        text="Shop All Shoes"/>
-                </actions>
-            </teaser_340011397_cop>
+                        offset="0"
+                        width="12"/>
+                </cq:responsive>
+            </productteaser>
         </root>
     </jcr:content>
 </jcr:root>
