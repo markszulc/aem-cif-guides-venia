@@ -36,6 +36,9 @@
         <module>ui.apps</module>
         <module>ui.apps.structure</module>
         <module>ui.content</module>
+        <module>ui.config.graphql-enablement</module>
+        <module>ui.apps.graphql-enablement</module>
+        <module>ui.content.graphql-enablement</module>
         <module>it.tests</module>
     </modules>
 
