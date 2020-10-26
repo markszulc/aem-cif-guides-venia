@@ -10,7 +10,7 @@
         <groupId>com.adobe.aem.sites</groupId>
         <artifactId>aem-headless</artifactId>
         <version>0.0.3-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
+        <relativePath>../pom-graphql.xml</relativePath>
     </parent>
 
     <!-- ====================================================================== -->
@@ -42,12 +42,6 @@
                     <properties>
                         <cloudManagerTarget>none</cloudManagerTarget>
                     </properties>
-                    <repositoryStructurePackages>
-                        <repositoryStructurePackage>
-                            <groupId>com.adobe.aem.sites</groupId>
-                            <artifactId>aem-headless.repository-structure</artifactId>
-                        </repositoryStructurePackage>
-                    </repositoryStructurePackages>
                 </configuration>
             </plugin>
 
@@ -69,12 +63,6 @@
     </build>
 
     <dependencies>
-        <dependency>
-            <groupId>com.adobe.aem.sites</groupId>
-            <artifactId>aem-headless.repository-structure</artifactId>
-            <version>0.0.3-SNAPSHOT</version>
-            <type>zip</type>
-        </dependency>
 
         <dependency>
             <groupId>com.adobe.aem</groupId>

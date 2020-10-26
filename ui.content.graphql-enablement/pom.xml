@@ -9,7 +9,7 @@
         <groupId>com.adobe.aem.sites</groupId>
         <artifactId>aem-headless</artifactId>
         <version>0.0.3-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
+        <relativePath>../pom-graphql.xml</relativePath>
     </parent>
 
     <!-- ====================================================================== -->
