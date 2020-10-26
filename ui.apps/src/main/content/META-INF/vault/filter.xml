@@ -2,4 +2,6 @@
 <workspaceFilter version="1.0">
     <filter root="/apps/venia"/>
     <filter root="/apps/aem-headless"/>
+    <filter root="/apps/graphiql"/>
+    <filter root="/apps/graphql-enablement"/>
 </workspaceFilter>

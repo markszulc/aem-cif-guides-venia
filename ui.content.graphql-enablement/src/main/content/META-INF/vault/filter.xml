@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<workspaceFilter version="1.0">
-    <!-- Conf Filters -->
-    <filter root="/conf/global/settings/dam" mode="update" />
-    <!-- Content Filters -->
-    <filter root="/content/graphiql" mode="merge"/>
-</workspaceFilter>
