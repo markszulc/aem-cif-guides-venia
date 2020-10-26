@@ -44,6 +44,9 @@
                         <filter><root>/apps/dam</root></filter>
                         <filter><root>/apps/wcm</root></filter>
                         <filter><root>/apps/msm</root></filter>
+                        <filter><root>/apps/graphiql</root></filter>
+                        <filter><root>/apps/graphql-enablement</root></filter>
+                        <filter><root>/apps/graphql</root></filter>
 
                         <!-- Immutable context-aware configurations -->
                         <filter><root>/apps/settings</root></filter>

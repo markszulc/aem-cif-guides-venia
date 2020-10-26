@@ -1,0 +1,8 @@
+{
+    "scripts":[
+        "set ACL for everyone\r\n allow jcr:read on /conf restriction(rep:glob,/*/settings/graphql/persistentQueries/*)\r\nend"
+    ],
+    "references":[
+        ""
+    ]
+}
