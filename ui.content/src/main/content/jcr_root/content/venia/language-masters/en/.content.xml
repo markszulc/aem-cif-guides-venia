@@ -13,12 +13,11 @@
         cq:template="/conf/venia/settings/wcm/templates/landing-page"
         jcr:primaryType="cq:PageContent"
         jcr:title="Venia Demo Store - Home"
-        sling:resourceType="venia/components/page"
-        navRoot="{Boolean}true"
-        pageTitle="Venia">
-        <root
-            jcr:primaryType="nt:unstructured"
-            sling:resourceType="venia/components/container"
+        navRoot="{Boolean}true" 
+        sling:resourceType="venia/components/page" 
+        pageTitle="Home">
+        <root jcr:primaryType="nt:unstructured" 
+            sling:resourceType="venia/components/container" 
             layout="responsiveGrid">
             <container
                 jcr:primaryType="nt:unstructured"

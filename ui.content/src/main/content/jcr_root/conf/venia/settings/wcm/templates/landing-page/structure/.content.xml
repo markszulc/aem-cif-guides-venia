@@ -45,11 +45,18 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="venia/components/container"
                 layout="responsiveGrid">
-                <container
-                    cq:styleIds="[1598175947881]"
+                <breadcrumb
+                    jcr:created="{Date}2020-08-17T16:22:56.378+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-08-17T16:22:56.378+02:00"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="venia/components/container"
-                    editable="{Boolean}true"/>
+                    sling:resourceType="venia/components/commerce/breadcrumb"
+                    startLevel="3"
+                    structureDepth="2"/>
+                <container jcr:primaryType="nt:unstructured" 
+                    sling:resourceType="venia/components/container" 
+                    editable="{Boolean}true" />
             </container>
             <container_88279043
                 cq:styleIds="[1598175947881]"

@@ -23,7 +23,7 @@
     <parent>
         <groupId>com.venia</groupId>
         <artifactId>venia</artifactId>
-        <version>2020.8.15-SNAPSHOT</version>
+        <version>2020.10.28-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
@@ -47,46 +47,26 @@
             <plugin>
                 <groupId>org.apache.jackrabbit</groupId>
                 <artifactId>filevault-package-maven-plugin</artifactId>
-                <extensions>true</extensions>
                 <configuration>
                     <group>com.venia</group>
                     <name>venia.ui.apps</name>
                     <classifier>${project.classifier}</classifier>
                     <packageType>application</packageType>
                     <accessControlHandling>merge</accessControlHandling>
-                    <properties>
-                        <cloudManagerTarget>none</cloudManagerTarget>
-                    </properties>
                     <repositoryStructurePackages>
                         <repositoryStructurePackage>
                             <groupId>com.venia</groupId>
                             <artifactId>venia.ui.apps.structure</artifactId>
                         </repositoryStructurePackage>
                     </repositoryStructurePackages>
-                    <embeddeds>
-                        <embedded>
-                            <groupId>com.venia</groupId>
-                            <artifactId>venia.core</artifactId>
-                            <classifier>${project.classifier}</classifier>
-                            <target>/apps/venia/install</target>
-                        </embedded>
-                        <embedded>
-                            <groupId>com.adobe.commerce.cif</groupId>
-                            <artifactId>core-cif-components-core</artifactId>
-                            <target>/apps/venia/install</target>
-                        </embedded>
-                        <embedded>
-                            <groupId>com.adobe.commerce.cif</groupId>
-                            <artifactId>magento-graphql</artifactId>
-                            <target>/apps/venia/install</target>
-                        </embedded>
-                    </embeddeds>
-                    <subPackages>
-                    </subPackages>
                     <dependencies>
                         <dependency>
                             <groupId>com.adobe.commerce.cif</groupId>
                             <artifactId>core-cif-components-apps</artifactId>
+                        </dependency>
+                        <dependency>
+                            <groupId>com.adobe.commerce.cif</groupId>
+                            <artifactId>core-cif-components-config</artifactId>
                         </dependency>
                     </dependencies>
                 </configuration>
@@ -94,6 +74,7 @@
             <plugin>
                 <groupId>org.codehaus.gmaven</groupId>
                 <artifactId>gmaven-plugin</artifactId>
+                <version>1.3</version>
             </plugin>
             <plugin>
                 <groupId>com.day.jcr.vault</groupId>
@@ -104,6 +85,7 @@
                     <failOnError>true</failOnError>
                 </configuration>
             </plugin>
+
             <plugin>
                 <groupId>org.apache.sling</groupId>
                 <artifactId>htl-maven-plugin</artifactId>
@@ -163,53 +145,7 @@
             <activation>
                 <activeByDefault>false</activeByDefault>
             </activation>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.jackrabbit</groupId>
-                        <artifactId>filevault-package-maven-plugin</artifactId>
-                        <configuration>
-                            <embeddeds combine.children="append">
-                                <embedded>
-                                    <groupId>com.adobe.cq</groupId>
-                                    <artifactId>core.wcm.components.core</artifactId>
-                                    <target>/apps/venia/install</target>
-                                </embedded>
-                                <embedded>
-                                    <groupId>com.adobe.commerce.cif</groupId>
-                                    <artifactId>graphql-client</artifactId>
-                                    <target>/apps/venia/install</target>
-                                </embedded>
-                            </embeddeds>
-                            <dependencies combine.children="append">
-                                <dependency>
-                                    <groupId>com.adobe.cq</groupId>
-                                    <artifactId>core.wcm.components.content</artifactId>
-                                </dependency>
-                                <dependency>
-                                    <groupId>com.adobe.cq</groupId>
-                                    <artifactId>core.wcm.components.config</artifactId>
-                                </dependency>
-                            </dependencies>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
             <dependencies>
-                <dependency>
-                    <groupId>com.adobe.cq</groupId>
-                    <artifactId>core.wcm.components.core</artifactId>
-                </dependency>
-                <dependency>
-                    <groupId>com.adobe.cq</groupId>
-                    <artifactId>core.wcm.components.content</artifactId>
-                    <type>zip</type>
-                </dependency>
-                <dependency>
-                    <groupId>com.adobe.cq</groupId>
-                    <artifactId>core.wcm.components.config</artifactId>
-                    <type>zip</type>
-                </dependency>
                 <dependency>
                     <groupId>com.adobe.aem</groupId>
                     <artifactId>uber-jar</artifactId>
@@ -265,6 +201,11 @@
         <dependency>
             <groupId>com.adobe.commerce.cif</groupId>
             <artifactId>core-cif-components-apps</artifactId>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.commerce.cif</groupId>
+            <artifactId>core-cif-components-config</artifactId>
             <type>zip</type>
         </dependency>
         <dependency>

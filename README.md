@@ -4,7 +4,7 @@
 # AEM Guides - CIF Venia Demo
 
 ### DEPLOY
-mvn clean install -PautoInstallPackage,cloud
+mvn clean install -PautoInstallSinglePackage,cloud
 
 ### Demo Content Packages
 - Site Package: https://www.dropbox.com/s/9p7lyr1q9fat11w/venia-site-0.2.zip?dl=0
