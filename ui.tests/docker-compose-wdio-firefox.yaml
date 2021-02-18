@@ -34,7 +34,7 @@ services:
     volumes:
       - ./reports:/tmp/reports
       - 'shared:/tmp/shared'
-    image: 'com.venia-venia.ui.tests/ui.tests:latest'
+    image: 'com.markszulc.commerce-szulccommerce.ui.tests/ui.tests:latest'
   selenium-firefox:
     image: 'selenium/standalone-firefox-debug'
     ports:

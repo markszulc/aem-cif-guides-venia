@@ -1,8 +1,0 @@
-{
-    "short_name": "Venia",
-    "name": "Venia Site",
-    "start_url": "/content/venia/us/en.html",
-    "background_color": "#FFEA00",
-    "scope": "/content/venia",
-    "theme_color": "#FFEA00"
-  }

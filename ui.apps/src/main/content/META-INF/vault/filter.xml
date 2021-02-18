@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/apps/venia"/>
-    <filter root="/apps/aem-headless"/>
-    <filter root="/apps/graphiql"/>
-    <filter root="/apps/graphql-enablement"/>
-    <filter root="/apps/venia/clientlibs"/>
-    <filter root="/apps/venia/components"/>
-    <filter root="/apps/venia/i18n"/>
+    <filter root="/apps/szulccommerce/clientlibs"/>
+    <filter root="/apps/szulccommerce/components"/>
+    <filter root="/apps/szulccommerce/i18n"/>
 </workspaceFilter>

@@ -6,18 +6,18 @@
     <!-- P A R E N T  P R O J E C T  D E S C R I P T I O N                      -->
     <!-- ====================================================================== -->
     <parent>
-        <groupId>com.venia</groupId>
-        <artifactId>venia</artifactId>
-        <version>2020.10.28-SNAPSHOT</version>
+        <groupId>com.markszulc.commerce</groupId>
+        <artifactId>szulccommerce</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>venia.ui.apps.structure</artifactId>
+    <artifactId>szulccommerce.ui.apps.structure</artifactId>
     <packaging>content-package</packaging>
-    <name>Venia - Repository Structure Package</name>
+    <name>Szulc Commerce - Repository Structure Package</name>
     <description>
         Empty package that defines the structure of the Adobe Experience Manager repository the Code packages in this project deploy into.
         Any roots in the Code packages of this project should have their parent enumerated in the Filters list below.
@@ -33,7 +33,7 @@
 
                         <!-- /apps root -->
                         <filter><root>/apps</root></filter>
-                        <filter><root>/apps/venia</root></filter>
+                        <filter><root>/apps/szulccommerce</root></filter>
 
                         <!-- Common overlay roots -->
                         <filter><root>/apps/sling</root></filter>
@@ -41,38 +41,12 @@
                         <filter><root>/apps/dam</root></filter>
                         <filter><root>/apps/wcm</root></filter>
                         <filter><root>/apps/msm</root></filter>
-                        <filter><root>/apps/graphiql</root></filter>
-                        <filter><root>/apps/graphql-enablement</root></filter>
-                        <filter><root>/apps/graphql</root></filter>
 
                         <!-- Immutable context-aware configurations -->
                         <filter><root>/apps/settings</root></filter>
 
                     </filters>
                 </configuration>
-                <!-- These two configs disable the use of classifiers added by default in the parent POM -->
-                <executions>
-                    <execution>
-                        <id>default-package</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>package</goal>
-                        </goals>
-                        <configuration>
-                            <workDirectory>${project.build.directory}/vault-work</workDirectory>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>default-validate-files</id>
-                        <phase>validate-files</phase>
-                        <goals>
-                            <goal>process-classes</goal>
-                        </goals>
-                        <configuration>
-                            <workDirectory>${project.build.directory}/vault-work</workDirectory>
-                        </configuration>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>

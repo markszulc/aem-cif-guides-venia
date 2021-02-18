@@ -18,22 +18,27 @@
 <!--
  | DO NOT MODIFY
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.venia</groupId>
-        <artifactId>venia</artifactId>
-        <version>2020.10.28-SNAPSHOT</version>
+        <groupId>com.markszulc.commerce</groupId>
+        <artifactId>szulccommerce</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>venia.ui.tests</artifactId>
-    <name>Venia - UI Tests</name>
-    <description>UI Tests for Venia</description>
+    <artifactId>szulccommerce.ui.tests</artifactId>
+    <name>Szulc Commerce - UI Tests</name>
+    <description>UI Tests for Szulc Commerce</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <frontend-maven-plugin.version>1.7.6</frontend-maven-plugin.version>
+        <node.version>v12.16.3</node.version>
+        <npm.version>6.14.4</npm.version>
 
         <HEADLESS_BROWSER>false</HEADLESS_BROWSER>
 
@@ -112,6 +117,7 @@
                     <plugin>
                         <groupId>com.github.eirslett</groupId>
                         <artifactId>frontend-maven-plugin</artifactId>
+                        <version>${frontend-maven-plugin.version}</version>
                         <executions>
                             <execution>
                                 <id>install node and npm</id>
@@ -120,6 +126,8 @@
                                     <goal>install-node-and-npm</goal>
                                 </goals>
                                 <configuration>
+                                    <nodeVersion>${node.version}</nodeVersion>
+                                    <npmVersion>${npm.version}</npmVersion>
                                     <installDirectory>test-module</installDirectory>
                                 </configuration>
                             </execution>
