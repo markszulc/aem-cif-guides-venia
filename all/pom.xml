@@ -88,6 +88,12 @@
                         </embedded>
                         <embedded>
                             <groupId>com.adobe.commerce.cif</groupId>
+                            <artifactId>core-cif-components-config</artifactId>
+                            <type>zip</type>
+                            <target>/apps/szulccommerce-vendor-packages/application/install</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>com.adobe.commerce.cif</groupId>
                             <artifactId>core-cif-components-core</artifactId>
                             <target>/apps/szulccommerce-vendor-packages/application/install</target>
                         </embedded>

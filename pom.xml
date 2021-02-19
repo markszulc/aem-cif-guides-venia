@@ -46,7 +46,7 @@
         <sling.password>admin</sling.password>
         <vault.user>admin</vault.user>
         <vault.password>admin</vault.password>
-        <core.cif.components.version>1.6.0</core.cif.components.version>
+        <core.cif.components.version>1.7.0</core.cif.components.version>
         <graphql.client.version>1.7.0</graphql.client.version>
         <magento.graphql.version>6.0.0-magento235</magento.graphql.version>
         <bnd.version>5.1.2</bnd.version>
@@ -575,6 +575,12 @@ Bundle-DocURL:
             </dependency>
             <dependency>
                 <groupId>com.adobe.commerce.cif</groupId>
+                <artifactId>core-cif-components-config</artifactId>
+                <type>zip</type>
+                <version>${core.cif.components.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.adobe.commerce.cif</groupId>
                 <artifactId>core-cif-components-core</artifactId>
                 <version>${core.cif.components.version}</version>
             </dependency>
@@ -588,6 +594,7 @@ Bundle-DocURL:
                 <artifactId>magento-graphql</artifactId>
                 <version>${magento.graphql.version}</version>
             </dependency>
+            
 
 
             <!-- Testing -->
