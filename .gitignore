@@ -99,8 +99,8 @@ node/
 
 # Tests
 coverage/
-
-
 # UI Tests
 ui.tests/test-module/reports
 test-reports
+
+.DS_Store
